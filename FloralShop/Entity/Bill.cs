@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace FloralShop.Entity
 {
-    public class User : Base
+    public class Bill : Base
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public string name { get; set; }
-        public bool gender { get; set; }
-        public string email { get; set; }
-        public string address { get; set; }
-        public int phone { get; set; }
-        public DateTime CreateTime { get ; set; }
-        public DateTime UpdateTime { get ; set ; }
+        public int iduser { get; set; }
+        public int MyProperty { get; set; }
+        public string total { get; set; }
+        public string payment { get; set; }
+        public string note { get; set; }
+        public DateTime CreateTime { get; set ; }
+        public DateTime UpdateTime { get ; set; }
         public bool IsDelete { get ; set ; }
     }
 }
