@@ -9,6 +9,7 @@ namespace FloralShop.Entity
     public class FloralShopDbContext : DbContext
     {
         public DbSet<TypeProduct> TypeProducts { get; set; }
+        public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=.;Database=FloralShopDB;Trusted_Connection=True;");
